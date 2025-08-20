@@ -8,83 +8,102 @@
   linkcolor=blue,
   filecolor=magenta,      
   urlcolor=blue,
-  pdftitle={Vu-Hong-Hai Phan's Resume},
+  pdftitle={Cristian Barrera Resume},
   pdfpagemode=UseOutlines,
   }
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
-\name{Vu-Hong-Hai (Hai) Phan}
-\email{honghaipvu@gmail.com}
-\phone{(514)-XXX-XXXX}
-\address{Montreal, QC, Canada \\ (open to relocation)}
-\linkedin{linkedin.com/in/vhhphan}
-\github{github.com/HongHaiPV}
-
-
+\name{Cristian Barrera}
+\email{cris.rbarreram@gmail.com}
+\phone{+1 (216) 333-4388}
+\website{crisbarrera.com}
+\address{Cleveland, Ohio}
+\linkedin{linkedin.com/in/cristian-barrera-63205997/}
+\github{github.com/maberyick}
 
 \begin{document}
 %%%
 %%%
 %%%
 \begin{rSection}{EDUCATION}
-\begin{rSchool}{Concordia University, Montreal}
-  {\textbf{Winter 2020} - \textbf{Fall 2022}}
-  {Master of Computer Science ({thesis})}
-  {GPA: 4.0/4.3}
-  {Awards: Mitacs research fellowship (\$40k), Concordia FRS bursaries (\$15k).}
+\begin{rSchool}{Georgia Tech \& Emory University, Atlanta, GA}
+  {\textbf{Expected Fall 2025}}
+  {Ph.D. Candidate, Biomedical Engineering}
+  {Medical Imaging, Histopathology, Ophthalmology}
+  {}
 \end{rSchool}
 %
-\begin{rSchool}{Hanoi University of Science and Technology (HUST)}
-  {\textbf{Fall 2014} - \textbf{Fall 2019}}
-  {Bachelor of Computer Science ({5-years program})}
-  {GPA: 3.51/4.0}
-  {Awards: In-course scholarships, 3rd-prize competitive programming ({university-level}).}
+\begin{rSchool}{National University of Colombia}
+  {\textbf{2017} - \textbf{2019}}
+  {Master of Engineering, Biomedical Engineering}
+  {Medical Image Processing, Machine Learning, Genomics}
+  {}
+\end{rSchool}
+%
+\begin{rSchool}{South Colombian University}
+  {\textbf{2011} - \textbf{2015}}
+  {Bachelor of Engineering, Electronics}
+  {Digital Electronics, Signal Processing, Telecommunications}
+  {}
 \end{rSchool}
 \end{rSection}
 %%%
 %%%
 %%%
-\begin{rSection}{EXPERIENCES}
-  \begin{rWork}{Research Consultant (Mitacs)}{EXFO Inc, Montreal}{April 2020 - April 2022}
-    \item Engineered scalable and interpretable machine learning algorithm for automated root cause analysis using Python+Spark, increasing the diagnosis speed by 20x.
-    \item Surveyed and performed experiments on causal modelling, resulting in a well-received 2 years research plan and providing demonstrations every month.
-    \item Collaborated with team of domain experts, published 10+ internal documents and codes; one patent and one conference paper (both first-authored).
+\begin{rSection}{EXPERIENCE}
+
+  \begin{rWork}{Software Developer II}{Cleveland Clinic - Cleveland, OH}{2024 -- Present}
+    \item Foundation model training and testing on 2M unlabeled and 600k annotated OCT ophthalmology samples.
+    \item Dockerized deployment of models, improving performance by ~75\%, reducing error rates under 1\%; Saving processing time.
+    \item Developing deployment workflows combining Streamlit, Docker, and ML automation for non-server environments.
+    \item Fine-tuning large language models with retrieval-augmented generation (RAG) for OCT research and project tracking using large unstructured datasets.
+    \item Creating AI Agent Reader to validate and correct workflow outputs prior to review by QC Team Leaders.
   \end{rWork}
-  %
-  \begin{rWork}{Data Scientist}{Viettel, Hanoi}{Jun. 2019 - Nov. 2019}
-    \item Architected recommender systems using Python, Hive, Spark and Redis, serving 1M+ customers daily, in soft real-time, with 5x pickup rates uplift, averaging \$100,000 USD revenue/month.
-    \item Developed proprietary framework for large-scale RCT, supporting A/B testing and multi-armed bandit, with automated reporting features.
-    \item Overhauled music recommender system using topic modeling, achieving 10x pickup rate increase.
+  
+  \begin{rWork}{Graduate Image Scientist Researcher}{Emory University - Atlanta, GA}{Feb 2018 -- 2024}
+    \item Designed and implemented data models and visualizations for 4000+ histopathology images enhancing cancer research.
+    \item Developed machine learning models for patient outcomes and immunotherapy response; published in 5+ journals.
+    \item Built scalable deep learning and logistic regression systems to analyze biomedical data.
+    \item Collaborated with multidisciplinary teams to translate research into clinical insights.
   \end{rWork}
-  %
-  \begin{rWork}{Research Assistant}{HUST, Hanoi}{Mar. 2017 - Jun. 2019}
-    \item Engineered DL translation model in Tensorflow, bested Google \& Bing Translate in BLEU metric.
-    \item Collected, pre-processed corpus data using Python and web crawlers, resulting in nearly 1M pair of sentences.
-    \item Coordinated research team of six people, published multiple papers and seminars, of which two are first authored.
+
+  \begin{rWork}{Imaging Scientist Intern}{Genentech - San Francisco, CA}{Jun 2023 -- Aug 2023}
+    \item Improved data processing efficiency by 30\% through Python-based workflows.
+    \item Developed data integration solutions with optimal ETL patterns for immunoflrence imaging (IF).
+    \item Utilized distributed systems and big data modeling for large datasets.
   \end{rWork}
-  %
-  \begin{rWork}{Software Engineer (part-time)}{Viettel, Hanoi}{May 2017 - Jun. 2018}
-    \item Architected and maintained set of RESTful endpoints for chatbot, using Java, Python Flask, C++ and Apache Solar, achieving classification accuracy of 99\%.
-    \item Developed automatic data filtering process using Python + MySQL to move data to labelling platform, reduced low-quality data by 50\%.
-  \end{rWork}
+
 \end{rSection}
 %%%
 %%%
 %%%
-\begin{rSection}{Projects}
-\textbf{Arithmetic Encoder (2023)-\href{https://github.com/HongHaiPV/ArithmeticEncoder}{Github}.} A Python library for encoding and decoding text data using statistical estimators.
+\begin{rSection}{PROJECTS \& CURRENT WORK}
+\textbf{Foundation Model.} Training and fine-tuning on 2 million unlabeled and 600k annotated OCT ophthalmology samples. Dockerized models to improve deployment efficiency using Streamlit and Docker.
+
+\vspace{2mm}
+
+\textbf{AI Agent Reader.} Developed an AI Agent to verify and correct ML workflow outputs before delivery to quality control leadership.
 \end{rSection}
+
+%\begin{rSection}{PROJECTS}
+%\textbf{Hyperplex Tissue Imaging Enhancement.} Led development of Python-based image analysis workflows for multiplexed microscopy, improving accuracy and efficiency by 25\%. Enhanced HPC deployment processing speed by 20\%.
+
+%\vspace{2mm}
+
+%\textbf{PhenopyCell: Lung Cancer Prediction.} Developed AI-powered system analyzing large pathology datasets, improving diagnostic accuracy by 20\%. Applied CNNs to reduce errors by 15\% and improve speed by 25\%.
+
+%\end{rSection}
 %%%
 %%%
 %%%
 \begin{rSection}{SKILLS}
-\textbf{Languages:} Python, Java, SQL, C/C++, \LaTeX, Bash, Matlab/Octave, HTML/CSS, Scala
+\textbf{Main Languages:} Python, R
 
-\textbf{Frameworks:} Pandas, PyTorch, Tensorflow, Numpy, Scikit-learn, Plotly, Flask, PyTest, XGBoost, SciPy, Apache Hadoop, Apache Spark, Git, Docker, Gitlab CI/CD, Jenkins, Pentaho DI, MySQL, ORACLE, MSSQL(exposure), Redis, MongoDB, Tableau (exposure), GCP (exposure), AWS (exposure)
+\textbf{Frameworks/Tools:} TensorFlow, PyTorch, Streamlit, Docker, Git, VIM, Linux, Servers, AWS, Azure
 
-\textbf{Natural Languages:} English (fluent), French (elementary), Vietnamese (native)
+\textbf{Domains:} Data Cleaning, Feature Engineering, Image Processing, Machine Learning, Deep Learning, Data Engineering, Visualization, Software Development
 
 \end{rSection}
 %%%

@@ -41,6 +41,7 @@
 \newcommand{\address}[1]{\renewcommand{\address}{#1}}
 \newcommand{\linkedin}[1]{\renewcommand{\linkedin}{#1}}
 \newcommand{\github}[1]{\renewcommand{\github}{#1}}
+\newcommand{\website}[1]{\renewcommand{\website}{#1}}
 
 % \printname is used to print the name as a page header
 
@@ -63,7 +64,9 @@
   \begin{center}
   \begin{minipage}[t]{.35\textwidth}
     \href{mailto:\email}{\email}\\ % Print email with clickable link
-    \phone % Print phone number
+    \phone\\ % Print phone number
+    \href{https://www.\website}{\faGlobe\,\website}
+
   \end{minipage}%
   \begin{minipage}[t]{.3\textwidth}
     \centering
