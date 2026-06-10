@@ -15,7 +15,6 @@
 \ProvidesClass{resume}[2023/05/01 v1.0 Resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
-\usepackage{mathptmx}
 \usepackage[T1]{fontenc}
 \usepackage{academicons}
 \usepackage{fontawesome}
@@ -114,13 +113,13 @@
 
 \newenvironment{rWork}[3]{ % 3 input arguments - title, company's name and work duration
   {
-  \begin{minipage}[t]{0.4\textwidth}
-    \bf #1 % Print title
+  \noindent\begin{minipage}[t]{0.74\textwidth}
+    \bf #1\\
+    #2
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.24\textwidth}
+    \raggedleft \bf #3
   \end{minipage}
-  \begin{minipage}[t]{0.3\textwidth}
-    \bf #2 % Print company's name
-  \end{minipage}
-  \hfill \bf #3 % Flush work duration to the right
   }
   \begin{list}{\raisebox{.7\height}{\scalebox{.7}{$\bullet$}}}{\leftmargin=0em} % using small scaled \bullet for bullets, no indentation
     \setlength{\itemsep}{-0.5em} \vspace{-0.5em}% Compress items in list together for aesthetics
