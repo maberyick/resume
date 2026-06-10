@@ -27,23 +27,29 @@
 %%%
 %%%
 %%%
+\begin{rSection}{SUMMARY}
+Data Scientist focused on medical imaging and machine learning, with 7+ years across academic research, biotech, and production clinical pipelines. Strong experience in OCT, deep learning, distributed training, and MLOps, with a track record of shipping practical tools used by research and clinical teams.
+\end{rSection}
+%%%
+%%%
+%%%
 \begin{rSection}{EDUCATION}
 \begin{rSchool}{Georgia Tech \& Emory University, Atlanta, GA}
-  {\textbf{Expected Fall 2025}}
-  {Ph.D. Candidate, Biomedical Engineering}
+  {\textbf{Aug 2020} -- \textbf{Jan 2026}}
+  {Ph.D., Biomedical Engineering}
   {Medical Imaging, Histopathology, Ophthalmology}
   {}
 \end{rSchool}
 %
 \begin{rSchool}{National University of Colombia}
-  {\textbf{2017} - \textbf{2019}}
+  {\textbf{Jan 2017} -- \textbf{Dec 2019}}
   {Master of Engineering, Biomedical Engineering}
   {Medical Image Processing, Machine Learning, Genomics}
   {}
 \end{rSchool}
 %
 \begin{rSchool}{South Colombian University}
-  {\textbf{2011} - \textbf{2015}}
+  {\textbf{Jan 2011} -- \textbf{Dec 2015}}
   {Bachelor of Engineering, Electronics}
   {Digital Electronics, Signal Processing, Telecommunications}
   {}
@@ -54,25 +60,37 @@
 %%%
 \begin{rSection}{EXPERIENCE}
 
-  \begin{rWork}{Software Developer II}{Cleveland Clinic - Cleveland, OH}{2024 -- Present}
-    \item Foundation model training and testing on 2M unlabeled and 600k annotated OCT ophthalmology samples.
-    \item Dockerized deployment of models, improving performance by ~75\%, reducing error rates under 1\%; Saving processing time.
-    \item Developing deployment workflows combining Streamlit, Docker, and ML automation for non-server environments.
-    \item Fine-tuning large language models with retrieval-augmented generation (RAG) for OCT research and project tracking using large unstructured datasets.
-    \item Creating AI Agent Reader to validate and correct workflow outputs prior to review by QC Team Leaders.
+  \begin{rWork}{Data Scientist III}{Cleveland Clinic (Cole Eye Institute) - Cleveland, OH}{Nov 2024 -- Present}
+    \item Lead OCT foundation model development by pretraining iVisionFM on 3.2M B-scans, then fine-tuning on hundreds of thousands to millions of scans for layer-specific tasks (ILM, BM, RPE, and related boundaries).
+    \item Designed a mixture-of-experts architecture with a pathology-aware router, delivering 30--40\% performance improvement versus a TransUNet-only baseline on complex pathology cohorts.
+    \item Architected distributed training and inference across 20+ GPUs on 10+ Linux workstations with containerized execution.
+    \item Built an Airflow-based orchestration workflow for OCT run submission across multiple computers, integrating 20+ containerized models.
+    \item Delivered a React and PostgreSQL platform for run submission, tracking, and quality-control visibility at 50--100 runs per day.
   \end{rWork}
   
-  \begin{rWork}{Graduate Image Scientist Researcher}{Emory University - Atlanta, GA}{Feb 2018 -- 2024}
-    \item Designed and implemented data models and visualizations for 4000+ histopathology images enhancing cancer research.
-    \item Developed machine learning models for patient outcomes and immunotherapy response; published in 5+ journals.
-    \item Built scalable deep learning and logistic regression systems to analyze biomedical data.
-    \item Collaborated with multidisciplinary teams to translate research into clinical insights.
+  \begin{rWork}{Graduate Research Scientist}{Emory University - Atlanta, GA}{Feb 2018 -- Jan 2024}
+    \item Designed data models and visualizations for 4,000+ histopathology images for cancer and biomarker research.
+    \item Developed machine learning models for patient outcomes and immunotherapy response contributing to peer-reviewed publications.
+    \item Built scalable deep learning and traditional ML pipelines for biomedical imaging and clinical datasets.
+    \item Collaborated with multidisciplinary teams to translate computational results into clinically relevant findings.
   \end{rWork}
 
-  \begin{rWork}{Imaging Scientist Intern}{Genentech - San Francisco, CA}{Jun 2023 -- Aug 2023}
+  \begin{rWork}{Imaging Scientist Intern}{Genentech - South San Francisco, CA}{Jun 2023 -- Aug 2023}
     \item Improved data processing efficiency by 30\% through Python-based workflows.
-    \item Developed data integration solutions with optimal ETL patterns for immunoflrence imaging (IF).
-    \item Utilized distributed systems and big data modeling for large datasets.
+    \item Developed ETL patterns for immunofluorescence imaging to integrate heterogeneous research datasets.
+    \item Partnered with scientists to deliver reproducible analysis outputs for imaging studies.
+  \end{rWork}
+
+  \begin{rWork}{Visiting Scientist}{Case Western Reserve University - Cleveland, OH}{Nov 2017 -- Jan 2020}
+    \item Supported imaging and data analysis workflows in biomedical engineering research collaborations.
+    \item Applied deep learning and signal processing methods to experimental datasets.
+    \item Delivered reproducible code and documentation for faculty and lab teams.
+  \end{rWork}
+
+  \begin{rWork}{Biomedical Engineering Contractor}{National University of Colombia - Bogota, Colombia}{Jan 2017 -- Dec 2019}
+    \item Developed deep learning face recognition tools for longitudinal child tracking programs.
+    \item Designed data collection and evaluation workflows to monitor accuracy and false alerts in deployment.
+    \item Supported surface EMG testing for maternal-fetal heart rate capture and downstream signal analysis.
   \end{rWork}
 
 \end{rSection}
@@ -80,11 +98,11 @@
 %%%
 %%%
 \begin{rSection}{PROJECTS \& CURRENT WORK}
-\textbf{Foundation Model.} Training and fine-tuning on 2 million unlabeled and 600k annotated OCT ophthalmology samples. Dockerized models to improve deployment efficiency using Streamlit and Docker.
+\textbf{OCT Foundation Model and MoE Segmentation Stack.} Pretrained iVisionFM on 3.2M OCT B-scans and fine-tuned for retinal layer segmentation (including ILM, BM, and RPE) with hundreds of thousands to millions of labeled examples, then added a pathology-aware mixture-of-experts router to improve complex-case performance by 30--40\% versus a TransUNet-only approach.
 
 \vspace{2mm}
 
-\textbf{AI Agent Reader.} Developed an AI Agent to verify and correct ML workflow outputs before delivery to quality control leadership.
+\textbf{Ophthalmology OCT Workflow Platform.} Distributed Airflow and container-based workflow for OCT processing across multiple computers, integrating 20+ models behind a React interface for run submission, monitoring, and quality control, with PostgreSQL tracking 50--100 daily runs.
 \end{rSection}
 
 %\begin{rSection}{PROJECTS}
@@ -101,9 +119,9 @@
 \begin{rSection}{SKILLS}
 \textbf{Main Languages:} Python, R
 
-\textbf{Frameworks/Tools:} TensorFlow, PyTorch, Streamlit, Docker, Git, VIM, Linux, Servers, AWS, Azure
+\textbf{Frameworks/Tools:} PyTorch, TensorFlow, Airflow, React, Flask, Docker, Podman, Redis, PostgreSQL, MLflow, Git, Linux, HPC, AWS, Azure
 
-\textbf{Domains:} Data Cleaning, Feature Engineering, Image Processing, Machine Learning, Deep Learning, Data Engineering, Visualization, Software Development
+\textbf{Domains:} Medical Imaging, OCT, Histopathology, Machine Learning, Deep Learning, Data Engineering, MLOps, Ophthalmology
 
 \end{rSection}
 %%%
