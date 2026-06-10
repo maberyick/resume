@@ -41,6 +41,7 @@
 \newcommand{\linkedin}[1]{\renewcommand{\linkedin}{#1}}
 \newcommand{\github}[1]{\renewcommand{\github}{#1}}
 \newcommand{\website}[1]{\renewcommand{\website}{#1}}
+\newcommand{\companywebsite}[1]{\renewcommand{\companywebsite}{#1}}
 
 % \printname is used to print the name as a page header
 
@@ -64,7 +65,8 @@
   \begin{minipage}[t]{.35\textwidth}
     \href{mailto:\email}{\email}\\ % Print email with clickable link
     \phone\\ % Print phone number
-    \href{https://www.\website}{\faGlobe\,\website}
+    \href{https://www.\website}{\faGlobe\,\website}\\
+    \href{https://www.\companywebsite}{\faGlobe\,\companywebsite}
 
   \end{minipage}%
   \begin{minipage}[t]{.3\textwidth}
